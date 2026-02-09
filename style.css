@@ -1,0 +1,123 @@
+/* ==============================
+   RESET / NORMALIZE
+   ============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Fonte padrão do site */
+  background-color: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* ==============================
+   TIPOGRAFIA
+   ============================== */
+.brand-name {
+  font-family: 'Poppins', sans-serif; /* Fonte especial para o nome da empresa */
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0A1F44;
+}
+
+h1, h2, h3 {
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* ==============================
+   LAYOUT
+   ============================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #f8f8f8;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0A1F44;
+  color: #fff;
+}
+
+/* ==============================
+   IMAGENS / PERFIL
+   ============================== */
+img.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* oval perfeita */
+  object-fit: cover;
+  border: 3px solid #0A1F44; /* opcional, dá destaque */
+}
+
+/* ==============================
+   BOTÕES
+   ============================== */
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0A1F44;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #081733;
+}
+
+/* ==============================
+   COMPONENTES
+   ============================== */
+.card {
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ==============================
+   RESPONSIVO
+   ============================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .brand-name {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  img.profile {
+    width: 150px;
+    height: 150px;
+  }
+}
