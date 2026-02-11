@@ -1,0 +1,224 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body {
+  font-family:'Inter', sans-serif;
+  background:#0A1F44;
+  color:white;
+}
+
+.container {
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.header {
+  position:fixed;
+  width:100%;
+  background:rgba(10,31,68,0.95);
+  backdrop-filter:blur(10px);
+  padding:15px 0;
+  z-index:1000;
+}
+
+.nav {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo-area {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:700;
+  font-size:1.2rem;
+}
+
+.logo-area img {
+  width:40px;
+}
+
+.menu {
+  display:flex;
+  gap:30px;
+}
+
+.menu a {
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+}
+
+.hamburger {
+  display:none;
+  flex-direction:column;
+  gap:5px;
+  cursor:pointer;
+}
+
+.hamburger span {
+  width:25px;
+  height:3px;
+  background:white;
+}
+
+.hero {
+  padding-top:120px;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.hero-content {
+  display:flex;
+  align-items:center;
+  gap:50px;
+}
+
+.hero-text h1 {
+  font-size:2.5rem;
+  margin-bottom:20px;
+}
+
+.hero-text p {
+  margin-bottom:20px;
+  opacity:0.8;
+}
+
+.hero-img img {
+  width:100%;
+  max-width:500px;
+}
+
+.section {
+  padding:80px 0;
+}
+
+.dark {
+  background:#081733;
+}
+
+.grid-2 {
+  display:flex;
+  align-items:center;
+  gap:50px;
+}
+
+.reverse {
+  flex-direction:row-reverse;
+}
+
+.process-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.card {
+  background:#111c3d;
+  padding:30px;
+  border-radius:12px;
+}
+
+.btn-primary {
+  display:inline-block;
+  background:linear-gradient(45deg,#5e17eb,#8b5cf6);
+  padding:12px 25px;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+}
+
+.form {
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  max-width:500px;
+  margin:auto;
+}
+
+.form input, .form textarea {
+  padding:12px;
+  border-radius:6px;
+  border:none;
+}
+
+.footer {
+  text-align:center;
+  padding:20px;
+  background:#050d1f;
+}
+
+.whatsapp-btn {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:15px 20px;
+  border-radius:50px;
+  color:white;
+  text-decoration:none;
+}
+
+.chatbot {
+  position:fixed;
+  bottom:90px;
+  right:20px;
+  width:250px;
+  background:#111c3d;
+  border-radius:12px;
+  display:none;
+}
+
+.chat-header {
+  padding:10px;
+  background:#5e17eb;
+  border-radius:12px 12px 0 0;
+}
+
+.chat-body {
+  padding:15px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+@media(max-width:768px){
+
+.menu {
+  position:absolute;
+  top:70px;
+  right:0;
+  background:#081733;
+  flex-direction:column;
+  width:200px;
+  padding:20px;
+  display:none;
+}
+
+.menu.active {
+  display:flex;
+}
+
+.hamburger {
+  display:flex;
+}
+
+.hero-content, .grid-2 {
+  flex-direction:column;
+  text-align:center;
+}
+
+.reverse {
+  flex-direction:column;
+}
+
+}
