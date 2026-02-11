@@ -11,7 +11,7 @@ function responder(opcao){
   }
 
   if(opcao === 2){
-    resposta.innerText = "O prazo médio é de 7 a 15 dias dependendo da complexidade.";
+    resposta.innerText = "O prazo médio é de 5 a 10 dias dependendo da complexidade.";
   }
 
   if(opcao === 3){
