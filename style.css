@@ -48,9 +48,12 @@ header {
   object-fit: contain;
 }
 
-/* ================= HERO DEFINITIVA ================= */
+/* ================= HERO ================= */
 .hero {
   padding: 60px 0;
+}
+
+.hero-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,10 +85,8 @@ header {
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-/* TRAVA ABSOLUTA DA IMAGEM */
 .hero-img img {
   width: 300px;
   max-width: 100%;
@@ -93,6 +94,7 @@ header {
   object-fit: contain;
   border-radius: 12px;
 }
+
 
 /* ================= BOTÕES ================= */
 .btn-primary {
