@@ -1,0 +1,197 @@
+/* ================= HERO ================= */
+
+.hero {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #050a1a 0%, #0b0f2a 100%);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+  background: linear-gradient(90deg, #1e3a8a, #6d28d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* ================= SERVIÇOS ================= */
+
+.services {
+  padding: 80px 0;
+  background: #0b0f2a;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: #111633;
+  padding: 30px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(120, 90, 255, 0.15);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card img {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+/* ================= PLANOS ================= */
+
+.plans {
+  padding: 80px 0;
+  background: linear-gradient(180deg, #0b0f2a 0%, #050a1a 100%);
+}
+
+.plans h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.plan-card {
+  background: #111633;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid rgba(120, 90, 255, 0.15);
+  transition: 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+}
+
+.plan-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.plan-card .price {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #1e3a8a, #6d28d9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.plan-card ul {
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.plan-card ul li {
+  margin-bottom: 10px;
+  color: #cbd5e1;
+}
+
+.plan-card .btn-primary {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  padding: 30px 0;
+  background: #050a1a;
+  text-align: center;
+  font-size: 14px;
+  color: #94a3b8;
+  border-top: 1px solid rgba(120, 90, 255, 0.15);
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 1024px) {
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .services-grid,
+  .plans-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .services-grid,
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .btn-primary {
+    padding: 12px 22px;
+    font-size: 15px;
+  }
+
+}
