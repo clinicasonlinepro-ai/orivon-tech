@@ -81,3 +81,23 @@ window.addEventListener("scroll", () => {
     header.style.background = "rgba(11,11,15,0.85)";
   }
 });
+
+// ============================
+// HOVER ANIMADO COMO FUNCIONA
+// ============================
+
+const cards = document.querySelectorAll(".cards .card");
+
+cards.forEach(card => {
+
+  card.addEventListener("mouseenter", () => {
+    card.style.transform = "translateY(-10px)";
+    card.style.boxShadow = "0 15px 40px rgba(122, 0, 255, 0.25)";
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "translateY(0)";
+    card.style.boxShadow = "none";
+  });
+
+});
