@@ -158,6 +158,39 @@ body {
   border: 1px solid rgba(255,255,255,0.05);
 }
 
+/* ================= HOVER COMO FUNCIONA ================= */
+
+.cards .card {
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+.cards .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #1a0033, #240046, #2d0066);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.cards .card:hover::before {
+  opacity: 1;
+}
+
+.cards .card h3,
+.cards .card p {
+  position: relative;
+  z-index: 1;
+}
+
+.cards .card:hover {
+  transform: translateY(-8px);
+  border: 1px solid rgba(122, 0, 255, 0.4);
+}
+
 /* ================= EXEMPLO ================= */
 
 .exemplo-card {
